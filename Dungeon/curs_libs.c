@@ -22,7 +22,18 @@ void w_hline( WINDOW *win, int pos){
 WINDOW *create_win( int x, int y, int height, int width ){
     WINDOW *local;
     local = newwin( height, width, y, x );
-    wborder( local, '|', '|', '-', '-', '+', '+', '+', '+');
+    /** wborder( local, '|', '|', '-', '-', '+', '+', '+', '+'); */
+    wborder(
+            local,
+            ACS_VLINE,
+            ACS_VLINE,
+            ACS_HLINE,
+            ACS_HLINE,
+            ACS_ULCORNER,
+            ACS_URCORNER,
+            ACS_LLCORNER,
+            ACS_LRCORNER
+            );
     return local;
 }
 
