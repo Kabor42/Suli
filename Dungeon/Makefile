@@ -28,4 +28,4 @@ run: $(PROG)
 	./$(PROG).exe
 
 clean:
-	rm -rf *.o $(PROG)
+	rm -rf *.o *.gch $(PROG)
