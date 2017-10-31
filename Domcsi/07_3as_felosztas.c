@@ -8,7 +8,6 @@ void tag(long long n) {
     else
         tag(n/1000);
     printf("%03lld ", n%1000);
-
 }
 
 int main(int argc, char *argv[]) {
