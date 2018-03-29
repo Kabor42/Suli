@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1520934964 source:/home/kabor/Documents/Prog/elvis/CppEmber/memtrace.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"memtrace.h"
+
+1520934964 /home/kabor/Documents/Prog/elvis/CppEmber/memtrace.h
+	<new>
+	<cstdio>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+
+1520934964 source:/home/kabor/Documents/Prog/elvis/CppEmber/hallgato.cpp
+	<cstring>
+	"ember.h"
+	"hallgato.h"
+
+1520938366 /home/kabor/Documents/Prog/elvis/CppEmber/ember.h
+	<cstring>
+
+1520934964 /home/kabor/Documents/Prog/elvis/CppEmber/hallgato.h
+	<iostream>
+	<string>
+	"ember.h"
+
+1520934964 source:/home/kabor/Documents/Prog/elvis/CppEmber/emberMain.cpp
+	<iostream>
+	<ctime>
+	"ember.h"
+	"hallgato.h"
+	"kutato.h"
+	"gtest_lite.h"
+	"memtrace.h"
+	<typeinfo>
+
+1520937863 /home/kabor/Documents/Prog/elvis/CppEmber/kutato.h
+	"ember.h"
+
+1520934964 /home/kabor/Documents/Prog/elvis/CppEmber/gtest_lite.h
+	<iostream>
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+	"memtrace.h"
+
+1520934964 source:/home/kabor/Documents/Prog/elvis/CppEmber/ember.cpp
+	<cstring>
+	"memtrace.h"
+	"ember.h"
+

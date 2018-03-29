@@ -1,0 +1,87 @@
+# depslib dependency file v1.0
+1520938803 source:/home/kabor/Documents/Prog/hazi/CppBolt/datum.cpp
+	<iostream>
+	<sstream>
+	<ctime>
+	<iomanip>
+	"memtrace.h"
+	"datum.h"
+
+1520938803 /home/kabor/Documents/Prog/hazi/CppBolt/memtrace.h
+	<new>
+	<cstdio>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+
+1520938803 /home/kabor/Documents/Prog/hazi/CppBolt/datum.h
+	<iostream>
+
+1520938803 source:/home/kabor/Documents/Prog/hazi/CppBolt/memtrace.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"memtrace.h"
+
+1520938803 source:/home/kabor/Documents/Prog/hazi/CppBolt/boltMain.cpp
+	<iostream>
+	<sstream>
+	"memtrace.h"
+	"gtest_lite.h"
+	"kassza.h"
+	"tej.h"
+	"kifli.h"
+
+1520938803 /home/kabor/Documents/Prog/hazi/CppBolt/gtest_lite.h
+	<iostream>
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+	"memtrace.h"
+
+1520938803 /home/kabor/Documents/Prog/hazi/CppBolt/kassza.h
+	"aru.h"
+	"datum.h"
+
+1520965699 /home/kabor/Documents/Prog/hazi/CppBolt/aru.h
+	"custom_str.h"
+
+1520963352 /home/kabor/Documents/Prog/hazi/CppBolt/string.h
+	<iostream>
+	<cstring>
+	<algorithm>
+
+1520938803 /home/kabor/Documents/Prog/hazi/CppBolt/tej.h
+	"aru.h"
+
+1520965732 /home/kabor/Documents/Prog/hazi/CppBolt/kifli.h
+	"aru.h"
+
+1520965115 /home/kabor/Documents/Prog/hazi/CppBolt//aru.h
+	<iostream>
+	"string.h"
+
+1520963352 /home/kabor/Documents/Prog/hazi/CppBolt//string.h
+	<iostream>
+	<cstring>
+	<algorithm>
+
+1520964279 source:/home/kabor/Documents/Prog/hazi/CppBolt/kassza.cpp
+	<iostream>
+	<iomanip>
+	<stdexcept>
+	"memtrace.h"
+	"kassza.h"
+
+1520965535 /home/kabor/Documents/Prog/hazi/CppBolt/custom_str.h
+	<iostream>
+	<cstring>
+	<algorithm>
+

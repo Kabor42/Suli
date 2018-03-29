@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>Operátorok: Operátorok túlterhelése</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Operátorok
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Főoldal</span></a></li>
+      <li><a href="annotated.html"><span>Osztályok</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Operátorok túlterhelése </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="section user"><dt>Feladat:</dt><dd>Készítsünk olyan osztályt, ami bemutatja a tanult túlterhelhető operátorokat!<br />
+ Nem fontos, hogy értelmes műveletek legyenek, helyette inkább próbáljuk kiíratni magát a műveletet, és figyeljük meg a konstruktorok, destruktorok hívási mechanizmusát!</dd></dl>
+<dl class="section user"><dt>Megvalósítás:</dt><dd><ul>
+<li>A példányok egy int tagváltozót tartalmaznak. A műveleteket azonban nem hajtjuk végre, így a változót sem frissítjük.</li>
+<li>Minden túlterhelhető operátort definiáltunk. A konstruktorokat és néhány tagfüggvényt elkészítettünk előre.</li>
+<li>A megvalósított tagfüggvények kiírják a műveletben résztvevő objektumok címét és magát a műveletet. Az operátorok többsége azonban csak egy soremelést ír ki a standard kimenetre.</li>
+<li>A főprogramban az összes C++-ban használható operátort egy-egy utasítással meghívjuk egy _ nevű makró segítségével, melynek funkciója az, hogy magát az utasítást is kiírja a szabványos kimenetre, majd kitesz egy kommentjelet.</li>
+<li>Így, ha az adott operátor valamit kiír, az a kommentjel után jelenik meg. Pl: <div class="fragment"><div class="line">a + b   <span class="comment">// IDE írhat a + operátor</span></div>
+<div class="line">a++;    <span class="comment">// IDE pedig a ++ operátor</span></div>
+</div><!-- fragment --></li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>Demonstrációs cél:</dt><dd><ul>
+<li>konstruktorok, destruktorok szerepe</li>
+<li>operátorok túlterhelése, paraméterezése, működése</li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>Feladatok:</dt><dd><ol type="1">
+<li><b>Töltse</b> le, fordítsa, majd futtassa a félkész <a href="../operatorok_h.cpp">operatorok_h.cpp</a> programot!</li>
+<li><b>Értse</b> meg a működést, <b>magyarázza</b> meg a kiírásokat!</li>
+<li>Definiálja a <b>NEW</b> makrót és figyelje meg a <em>new</em>, <em>delete</em> operatorok működését!</li>
+<li><b>Tegyen</b> töréspontot a <em>new</em> operátorra, majd fordítsa le és futtassa az alkalmazást Debug módban!</li>
+<li>A töréspont elérésekor <b>nyisson</b> egy memória ablakot, amelyben a <em>mem1</em> terület látszik (Debug-&gt;Debuging Windows-&gt;Memory dump)! <b>Tipp:</b> Érdemes a <em>Memory</em> <em>dump</em> ablakot behúzni a <em>Manager</em> ablak alá.</li>
+<li>Most <b>tegyen</b> töréspontot a konstruktorra, majd engedje továbbfutni az alkalmazást!</li>
+<li><b>Értse</b> meg, hogy mi történik a <em>new</em>, <em>delete</em>, <em>new</em>[] és <em>delete</em>[] operátorok hívásakor! A megjegyzések segítenek a megértésben</li>
+<li><b>Figyelje</b> meg, hogy a konstruktor/destruktor mindenképpen meghívódik!</li>
+<li><b>Figyelje</b> meg, hogy a <em>delete</em> programozott törzse mikor hajtódik végre!</li>
+<li><b>Valósítson</b> meg néhány további operátort pl: <div class="fragment"><div class="line"><span class="keywordtype">void</span> operator++(<span class="keywordtype">int</span>)  { <span class="comment">///&lt; %A++ (post)</span></div>
+<div class="line"><span class="comment"></span>    cout &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;++&quot;</span> &lt;&lt; endl;</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
+<li>A <b>main</b> függvény minden <em>tanult</em> operátort meghív. Olyat is, ami <b>nem</b> <b>definiálható</b> át!</li>
+<li>A <em>felsorolás</em> és a <em>csoportosítás</em> az <b>operátorok</b> <b>prioritásának</b> felel meg.</li>
+<li>Az <b>ELKESZULT</b> makróval szabályozható, hogy mely utasításokat hajtsa végre. Az összes végrehajtható, mert a meg nem valósított operátorok egy üres sort írnak ki. Így az <b>ELKESZULT</b> makró csupán a kiírások számának csökkentésére szolgál.</li>
+<li><b>Keresse</b> meg azokat az operátorokat, melyek <b>nem</b> definiálhatók át, és értse meg, hogy mi történik hatásukra!</li>
+<li><b>Módosítsa</b> az összeadás, a kivonás és az értékadás operátorokat úgy, hogy azok láncolhatók legyenek!</li>
+<li>Egy-egy példán <b>vizsgálja</b> meg a működésüket (pl: c = a + b - b;)!</li>
+<li><b>Valósítson</b> meg néhány további művelet (+, -, +=, ++) úgy, hogy azok az elvárt hatással legyenek az osztályban tárolt egészre.</li>
+</ol>
+</dd></dl>
+<dl class="section user"><dt>Szorgalmi feladat:</dt><dd>Módosítsa az osztályt úgy, hogy<ol type="1">
+<li>Minden konstruktorhíváskor írja ki, hogy az adott példány hanyadik létező példány!</li>
+<li>A másoló konstruktor írja ki, hogy hanyadik példányt másolta le! (javaslat: statikus tag)</li>
+<li><b>Csak</b> <b>bekötött</b> biztonsági övvel: Definiálja az EXTRA makrót és értse meg a működést!</li>
+</ol>
+</dd></dl>
+<dl class="section user"><dt>Jó munkát!</dt><dd></dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Projekt: Operátorok Készült: Tue Feb 20 2018 22:00:05 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

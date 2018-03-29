@@ -1,0 +1,31 @@
+[
+    {
+        "arguments": [
+            "c++",
+            "-c",
+            "-I./gtest/include",
+            "-pedantic",
+            "-Wall",
+            "-Wno-long-long",
+            "-Wno-variadic-macros",
+            "komplex_teszt.cpp"
+        ],
+        "directory": "/home/kabor/Documents/Prog/Lab/lab_03/Komplex",
+        "file": "komplex_teszt.cpp"
+    },
+    {
+        "arguments": [
+            "c++",
+            "-c",
+            "-pedantic",
+            "-Wall",
+            "-Wno-long-long",
+            "-Wno-variadic-macros",
+            "-o",
+            "komplex.o",
+            "komplex.cpp"
+        ],
+        "directory": "/home/kabor/Documents/Prog/Lab/lab_03/Komplex",
+        "file": "komplex.cpp"
+    }
+]

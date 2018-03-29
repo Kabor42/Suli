@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1520522202 source:/home/kabor/Documents/Prog/Lab/lab_05/string5/memtrace.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"memtrace.h"
+
+1520522202 /home/kabor/Documents/Prog/Lab/lab_05/string5/memtrace.h
+	<new>
+	<cstdio>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+
+1520522202 source:/home/kabor/Documents/Prog/Lab/lab_05/string5/rendez.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<clocale>
+	<windows.h>
+	"rendez.h"
+	"rendez_u8.h"
+	"string5.h"
+
+1520522202 /home/kabor/Documents/Prog/Lab/lab_05/string5/rendez.h
+
+1520522202 /home/kabor/Documents/Prog/Lab/lab_05/string5/rendez_u8.h
+
+1520549025 /home/kabor/Documents/Prog/Lab/lab_05/string5/string5.h
+	<iostream>
+
+1520522202 source:/home/kabor/Documents/Prog/Lab/lab_05/string5/string5_test.cpp
+	<iostream>
+	<sstream>
+	<clocale>
+	<windows.h>
+	"memtrace.h"
+	"string5.h"
+	"rendez.h"
+	"gtest_lite.h"
+
+1520522202 /home/kabor/Documents/Prog/Lab/lab_05/string5/gtest_lite.h
+	<iostream>
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+	"memtrace.h"
+
+1520548431 source:/home/kabor/Documents/Prog/Lab/lab_05/string5/string5.cpp
+	<iostream>
+	<cstring>
+	"memtrace.h"
+	"string5.h"
+

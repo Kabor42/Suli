@@ -1,0 +1,94 @@
+// Copyright 2018 Kabor
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdbool.h>
+
+/**
+ * Problem 6 for Nagy Dominik (M8CFQC):
+ * Write a C program that counts the number of lines read from
+ * standard input, and also counts the lines that match the following
+ * (see problem 4) regular expression:
+ *
+ * ^[^#]_?(0)*[0-9]*W6.+[A-Z]*.*qqriq(A|b)
+ *
+ * The program should print the result as two octal numbers!
+ * The two numbers should be separated by /, the line should
+ * be ended with end of line, e.g.:
+ * 123/71
+ *
+ * The regular expression above should be interpreted by you,
+ * no separate interpereter program is to be made! E.g. For the
+ * [A-Z]+ expression you have to create a state machine that accepts
+ * line containing only capital letters.
+ */
+
+bool matchRegex(const char* str, const size_t len) {
+    size_t pos = 0;
+    bool retval = true;
+    char *pStr = NULL;
+    pStr = strstr( str, "qqriq");
+    if ( NULL == pStr)
+        return false;
+    int qqriqpos = (int) (pStr - str);
+
+    if('#' == str[pos++])
+        return false;
+    if('_' == str[pos])
+        if(pos <= len) pos++;
+        else return false;
+    while('0' == str[pos])
+        if(pos <= len) pos++;
+        else return false;
+    while(isdigit((int)str[pos]))
+        if(pos <= len) pos++;
+        else return false;
+    if('W' != str[pos++])
+        return false;
+    if('6' != str[pos++])
+        return false;
+    while(!isupper((int)str[pos]))
+        if(pos <= len) pos++;
+        else return false;
+    while(isupper((int)str[pos]))
+        if(pos <= len) pos++;
+        else return false;
+    while((pos < qqriqpos)){
+        if(pos <= len) pos++;
+        else return false;
+    }
+    pos += 5;
+    if( 'A' != str[pos] && 'b' != str[pos])
+        return false;
+
+
+    return retval;
+}
+
+
+int main() {
+
+    /** Neccessary for hftest */
+    char myid[]   = "Nagy Dominik,1MI,15,L4M <nd1531@hszk.bme.hu> M8CFQC\n";
+    char mytask[] = "Feladat = 6 English\n";
+    setbuf(stdout, NULL);        // Kikapcsolja a bufferelest
+    printf(myid);
+    printf(mytask);
+
+    ssize_t read;
+    char *line = NULL;
+    size_t len = 0;
+
+    int ord = 0, reg = 0;
+
+    while((read=getline( &line, &len, stdin)) != -1){
+        if(matchRegex(line,len))
+            reg++;
+        ord++;
+    }
+    printf("%o/%o\n", ord, reg);
+
+    return 0;
+}

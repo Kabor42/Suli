@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1519993520 source:/home/kabor/Documents/Prog/hazi/CppVektor/memtrace.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"memtrace.h"
+
+1519993520 /home/kabor/Documents/Prog/hazi/CppVektor/memtrace.h
+	<new>
+	<stdlib.h>
+	<iostream>
+
+1519993520 source:/home/kabor/Documents/Prog/hazi/CppVektor/vektorMain.cpp
+	<iostream>
+	<ctime>
+	<iomanip>
+	"vektor.h"
+	"gtest_lite.h"
+
+1519992451 /home/kabor/Documents/Prog/hazi/CppVektor/vektor.h
+	"memtrace.h"
+
+1519993520 /home/kabor/Documents/Prog/hazi/CppVektor/gtest_lite.h
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+
+1520071929 source:/home/kabor/Documents/Prog/hazi/CppVektor/vektor.cpp
+	"vektor.h"
+

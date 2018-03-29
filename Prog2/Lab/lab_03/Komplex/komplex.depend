@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1519609807 source:/home/kabor/Documents/Prog/Lab/lab_03/Komplex/komplex_teszt.cpp
+	<iostream>
+	<sstream>
+	"gtest_lite.h"
+	"komplex.h"
+
+1519609807 /home/kabor/Documents/Prog/Lab/lab_03/Komplex/gtest_lite.h
+	<iostream>
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+	"memtrace.h"
+
+1519739923 /home/kabor/Documents/Prog/Lab/lab_03/Komplex/komplex.h
+
+1519740129 source:/home/kabor/Documents/Prog/Lab/lab_03/Komplex/komplex.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	"./komplex.h"
+

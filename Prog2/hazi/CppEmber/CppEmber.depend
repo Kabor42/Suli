@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1520524767 source:/home/kabor/Documents/Prog/hazi/CppEmber/ember.cpp
+	"memtrace.h"
+	"ember.h"
+
+1520521537 /home/kabor/Documents/Prog/hazi/CppEmber/memtrace.h
+	<new>
+	<cstdio>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+
+1520525016 /home/kabor/Documents/Prog/hazi/CppEmber/ember.h
+	<cstring>
+
+1520521537 source:/home/kabor/Documents/Prog/hazi/CppEmber/memtrace.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"memtrace.h"
+
+1520521537 source:/home/kabor/Documents/Prog/hazi/CppEmber/emberMain.cpp
+	<iostream>
+	<ctime>
+	"ember.h"
+	"hallgato.h"
+	"kutato.h"
+	"gtest_lite.h"
+	"memtrace.h"
+	<typeinfo>
+
+1520521537 /home/kabor/Documents/Prog/hazi/CppEmber/hallgato.h
+	<iostream>
+	<string>
+	"ember.h"
+
+1520521537 /home/kabor/Documents/Prog/hazi/CppEmber/kutato.h
+	"ember.h"
+
+1520521537 /home/kabor/Documents/Prog/hazi/CppEmber/gtest_lite.h
+	<iostream>
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+	"memtrace.h"
+
+1520521537 source:/home/kabor/Documents/Prog/hazi/CppEmber/hallgato.cpp
+	<cstring>
+	"ember.h"
+	"hallgato.h"
+

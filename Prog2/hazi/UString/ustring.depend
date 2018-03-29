@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1521925957 source:/home/kabor/Documents/Prog/hazi/UString/memtrace.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"memtrace.h"
+
+1521925957 /home/kabor/Documents/Prog/hazi/UString/memtrace.h
+	<new>
+	<cstdio>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+
+1521925957 source:/home/kabor/Documents/Prog/hazi/UString/string5.cpp
+	<iostream>
+	<cstring>
+	"memtrace.h"
+	"string5.h"
+
+1521925957 /home/kabor/Documents/Prog/hazi/UString/string5.h
+	<iostream>
+

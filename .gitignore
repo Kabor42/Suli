@@ -1,0 +1,7 @@
+.svn*
+cmake-build-debug*
+doxygen*
+*.o
+*.exe
+*.bin
+*.swp

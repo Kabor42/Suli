@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1519608873 source:/home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/resistor.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	"resistor.h"
+
+1519906420 /home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/resistor.h
+
+1519906521 source:/home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/resistor_test2.cpp
+	<iostream>
+	"gtest_lite.h"
+	"resistor.h"
+
+1519905060 /home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/gtest_lite.h
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+

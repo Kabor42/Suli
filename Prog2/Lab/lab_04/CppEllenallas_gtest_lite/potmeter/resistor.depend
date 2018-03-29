@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1519907065 source:/home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/potmeter/console.cpp
+	"console.h"
+	<iostream>
+	<iomanip>
+	<conio.h>
+	<windows.h>
+	<termios.h>
+	<unistd.h>
+	<cstdio>
+
+1519907065 /home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/potmeter/console.h
+
+1519907065 source:/home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/potmeter/potmeter_teszt.cpp
+	<iostream>
+	<cctype>
+	"gtest_lite.h"
+	"potmeter.h"
+	"console.h"
+
+1519907065 /home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/potmeter/gtest_lite.h
+	<cassert>
+	<cmath>
+	<cstring>
+	<limits>
+	<string>
+	<fstream>
+
+1519907065 /home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/potmeter/potmeter.h
+	"resistor.h"
+
+1519907701 /home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/potmeter/resistor.h
+	<iostream>
+
+1519907450 source:/home/kabor/Documents/Prog/Lab/lab_04/CppEllenallas_gtest_lite/potmeter/resistor.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	"resistor.h"
+
