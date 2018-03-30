@@ -1,6 +1,7 @@
 .svn*
 cmake-build-debug*
 doxygen*
+.idea*
 *.o
 *.exe
 *.bin
