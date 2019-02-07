@@ -1,0 +1,2 @@
+0001;Hello world!;Valamilyen megjegyzes.;Ahol a kurta farku malac tur.;32;08;12;04;2019;
+0002;Masodik bejegyzes;Megjegyzes 2;Az uveghegyen is tul;01;1;10;01;2001;

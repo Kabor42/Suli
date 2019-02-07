@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1548444762 source:f:\documents\prog\levi\nagyhf_cb\curse.c
+	"curse.h"
+
+1548444762 f:\documents\prog\levi\nagyhf_cb\curse.h
+	<ncurses.h>
+	"stuff.h"
+
+1548444762 f:\documents\prog\levi\nagyhf_cb\stuff.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<math.h>
+	"debugmalloc.h"
+
+1548444762 f:\documents\prog\levi\nagyhf_cb\debugmalloc.h
+	<stdlib.h>
+	<stdbool.h>
+
+1548444762 source:f:\documents\prog\levi\nagyhf_cb\debugmalloc.c
+	<stdbool.h>
+	<stdlib.h>
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+	<stdarg.h>
+	"debugmalloc.h"
+
+1548444762 source:f:\documents\prog\levi\nagyhf_cb\main.c
+	"curse.h"
+	"debugmalloc.h"
+
+1548444762 source:f:\documents\prog\levi\nagyhf_cb\stuff.c
+	"stuff.h"
+
